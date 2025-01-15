@@ -45,12 +45,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 150px;
+    margin: 0 150px;
 }
 
 .nav-title{
     font-weight: 800;
-    font-size: x-large;
+    font-size: 45px;
 }
 nav ul li{
     list-style: none;
@@ -78,7 +78,7 @@ nav ul{
     font-size: 45px;
 }
 .banner-profile-pic{
-    width: 680px;
+    width: 580px;
 }
 .banner-content{
     max-width: 580px;
@@ -158,4 +158,34 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     padding: 10px 20 px;
     margin-bottom: 24px;
     border: none;
+}
+
+
+
+button {
+    /* Base styles for the button (optional) */
+    background-color: #4CAF50; /* Example: Green background */
+    color: white; /* Example: White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Example: Darker green on hover */
+  }
+  .hide{
+    display: none;
+  }
+@media screen and (max-width: 576px){
+    .skills-container, .resume-container, footer, .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .footer-column{
+        width: 100%;
+    }
 }
